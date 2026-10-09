@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* tombol buka */
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* checkbox disembunyikan */
+#menu-toggle {
+  display: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  padding: 30px;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+/* ketika tombol ☰ diklik */
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* isi */
+.content {
+  padding: 80px 40px;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 30px;
+}
