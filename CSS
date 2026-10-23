@@ -1,8 +1,156 @@
-body {background:yellow;
-     }
-h2 {text-align:center;
-   }
-h1 {text-align:center;
-   }
-img {margin:50px;
+
+/* ===== BACKGROUND UTAMA ===== */
+body {
+    background: linear-gradient(
+        135deg,
+        #fce8f3,
+        #f4f0fa,
+        #e8f0e8
+    );
+    color: #34445b;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+/* ===== JUDUL UTAMA ===== */
+h1 {
+    text-align: center;
+    color: #304c70;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px #d9c9df;
+}
+
+/* ===== SUBJUDUL ===== */
+h2 {
+    text-align: center;
+    color: #6c806b;
+    font-size: 26px;
+    border-bottom: 2px solid #d6bd79;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #b56c91;
+    margin-top: 25px;
+}
+
+/* ===== NAVIGASI ===== */
+a {
+    color: #526b91;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #d47da7;
+    text-decoration: underline;
+}
+
+/* ===== GAMBAR LOGO ===== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 320px;
+    margin: 30px auto;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== BAGIAN FILOSOFI LOGO ===== */
+p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ===== BAGIAN KONTEN ===== */
+section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px #cbbbd2;
+}
+
+/* ===== GAMBAR PRESENTASI CANVA ===== */
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    margin: 25px auto;
+    border: 3px solid #e5c6d8;
+    border-radius: 15px;
+}
+
+/* ===== TOMBOL DAN EFEK ===== */
+button {
+    background: linear-gradient(
+        135deg,
+        #8da9c4,
+        #d99ab8
+    );
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px #cbbbd2;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    color: #65738b;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #d6bd79;
+}
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
     }
+
+    h1 {
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
